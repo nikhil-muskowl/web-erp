@@ -6,9 +6,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MyLeavesComponent } from './leave-application/my-leaves/my-leaves.component';
 import { ApplyForLeaveComponent } from './leave-application/apply-for-leave/apply-for-leave.component';
 
-const routes: Routes = [
-  { path: '', component: LoginComponent },
-  { path: 'dashboard', component: DashboardComponent },
+const routes: Routes = [  
+  { path: '', component: DashboardComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'my-leaves', component: MyLeavesComponent },
   { path: 'apply-leave', component: ApplyForLeaveComponent },
 ];
