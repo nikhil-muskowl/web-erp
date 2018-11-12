@@ -1,1 +1,59 @@
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+
+        <button mat-icon-button (click)="sidenav.open()">
+            <mat-icon class="example-icon">menu</mat-icon>
+        </button>
+
+        <span>ERP</span>
+        <span class="example-spacer"></span>
+
+        <mat-icon class="example-icon">favorite</mat-icon>
+        <mat-icon class="example-icon">delete</mat-icon>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+            </button>
+            <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voicemail</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+            </button>
+        </mat-menu>
+
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
+
+    <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+
+        <mat-list role="list">
+            <mat-list-item role="listitem" routerLink="" (click)="close('escape')">dashboard</mat-list-item>
+            <mat-divider></mat-divider>
+
+            <mat-list-item role="listitem" routerLink="/holidays" (click)="close('escape')">Holidays</mat-list-item>
+            <mat-divider></mat-divider>
+
+            <mat-list-item role="listitem" routerLink="/my-leaves" (click)="close('escape')">My Leave Application</mat-list-item>
+            <mat-divider></mat-divider>
+
+            <mat-list-item role="listitem" routerLink="/apply-leave" (click)="close('escape')">Apply for Leave</mat-list-item>
+            <mat-divider></mat-divider>
+
+            <mat-list-item role="listitem"><button mat-button (click)="close('toggle button')">Close</button></mat-list-item>
+        </mat-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

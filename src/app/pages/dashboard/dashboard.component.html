@@ -1,83 +1,56 @@
-<app-header></app-header>
+<mat-card>
+  <mat-card-title>What is Lorem Ipsum?</mat-card-title>
+  <mat-card-subtitle>What is Lorem Ipsum?</mat-card-subtitle>
+  <mat-card-content>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+    make
+    a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+    versions
+    of Lorem Ipsum.
+  </mat-card-content>
+</mat-card>
+
+<mat-divider></mat-divider>
 
 
-<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
-
-  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
-
-    <mat-list role="list">
-      <mat-list-item role="listitem">Holidays</mat-list-item>
-      <mat-divider></mat-divider>
-
-      <mat-list-item role="listitem">My Leave Application</mat-list-item>
-      <mat-divider></mat-divider>
-
-      <mat-list-item role="listitem">Apply for Leave</mat-list-item>
-      <mat-divider></mat-divider>
-
-      <mat-list-item role="listitem"><button mat-button (click)="close('toggle button')">Close</button></mat-list-item>
-    </mat-list>
-
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
     <mat-card>
-      <mat-card-title>What is Lorem Ipsum?</mat-card-title>
-      <mat-card-subtitle>What is Lorem Ipsum?</mat-card-subtitle>
+      <mat-card-title>Total Leaves</mat-card-title>
+      <mat-card-subtitle>total leaves you have</mat-card-subtitle>
       <mat-card-content>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-        make
-        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-        versions
-        of Lorem Ipsum.
+        Primary card content. Intended for blocks of text
       </mat-card-content>
     </mat-card>
-
-    <mat-divider></mat-divider>
-
-
-    <mat-grid-list cols="4" rowHeight="100px">
-      <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <mat-card>
-          <mat-card-title>Total Leaves</mat-card-title>
-          <mat-card-subtitle>total leaves you have</mat-card-subtitle>
-          <mat-card-content>
-            Primary card content. Intended for blocks of text
-          </mat-card-content>
-        </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <mat-card>
-          <mat-card-title>Total Leaves</mat-card-title>
-          <mat-card-subtitle>total leaves you have</mat-card-subtitle>
-          <mat-card-content>
-            Primary card content. Intended for blocks of text
-          </mat-card-content>
-        </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <mat-card>
-          <mat-card-title>Total Leaves</mat-card-title>
-          <mat-card-subtitle>total leaves you have</mat-card-subtitle>
-          <mat-card-content>
-            Primary card content. Intended for blocks of text
-          </mat-card-content>
-        </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <mat-card>
-          <mat-card-title>Total Leaves</mat-card-title>
-          <mat-card-subtitle>total leaves you have</mat-card-subtitle>
-          <mat-card-content>
-            Primary card content. Intended for blocks of text
-          </mat-card-content>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>
-
-  </mat-sidenav-content>
-</mat-sidenav-container>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-card>
+      <mat-card-title>Total Leaves</mat-card-title>
+      <mat-card-subtitle>total leaves you have</mat-card-subtitle>
+      <mat-card-content>
+        Primary card content. Intended for blocks of text
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-card>
+      <mat-card-title>Total Leaves</mat-card-title>
+      <mat-card-subtitle>total leaves you have</mat-card-subtitle>
+      <mat-card-content>
+        Primary card content. Intended for blocks of text
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-card>
+      <mat-card-title>Total Leaves</mat-card-title>
+      <mat-card-subtitle>total leaves you have</mat-card-subtitle>
+      <mat-card-content>
+        Primary card content. Intended for blocks of text
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

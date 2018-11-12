@@ -13,6 +13,7 @@ import { MyLeavesComponent } from './leave-application/my-leaves/my-leaves.compo
 import { ApplyForLeaveComponent } from './leave-application/apply-for-leave/apply-for-leave.component';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
+import { HolidaysComponent } from './leave-application/holidays/holidays.component';
 
 export function mapMaterialModules() {
   return Object.keys(MATERIAL_MODULES).filter((k) => {
@@ -33,7 +34,8 @@ const MatModules = mapMaterialModules();
     MyLeavesComponent,
     ApplyForLeaveComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HolidaysComponent
   ],
   imports: [
     BrowserModule,
